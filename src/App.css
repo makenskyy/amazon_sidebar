@@ -1,38 +1,256 @@
-.App {
-  text-align: center;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.background-page-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
   min-height: 100vh;
   display: flex;
+  text-align: center;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  z-index: -80;
+}
+
+.background-page-container p {
+  font-size: 40px;
+}
+
+.background-page-container img {
+  margin-top: 20px;
+  height: auto;
+  width: 80%;
+  max-width: 800px;
+}
+
+.open-btn {
+  font-size: 30px;
+  margin: 20px 0 0 20px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.closeBtn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 390px;
   color: white;
+  font-size: 50px;
+  cursor: pointer;
+  transform: translateY(-5px);
+  z-index: 75;
 }
 
-.App-link {
-  color: #61dafb;
+.sidebar {
+  max-width: 380px;
+  overflow: hidden;
+  width: 85%;
+  height: 100%;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: left center;
+  transform: translateX(-420px);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.sidebarContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.sidebarHeader {
+  color: white;
+  font-weight: bold;
+  background-color: rgb(35, 47, 62);
+  padding: 10px 0px 10px 30px;
+  font-size: 19px;
+}
+
+.sidebarContent {
+  padding: 15px 0px 15px 25px;
+}
+
+.sidebarContentHeader {
+  margin-top: 5px;
+  padding: 15px 0px 15px 25px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.sidebarContent:hover {
+  background-color: #eaeded;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: black;
+}
+
+.sidebarRight {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 15px 25px 15px 25px;
+  cursor: pointer;
+}
+
+.sidebarRight:hover {
+  background-color: #eaeded;
+}
+
+.sidebarRight i {
+  color: #8e9090;
+}
+
+.sidebarRight:hover i {
+  color: #111111;
+}
+
+.sidebarRightDropdown {
+  display: flex;
+  width: 100%;
+  justify-content: start;
+  align-items: center;
+  padding: 15px 25px 15px 25px;
+  cursor: pointer;
+}
+
+.sidebarRightDropdown:hover {
+  background-color: #eaeded;
+}
+
+.sidebarRightDropdown i {
+  color: #8e9090;
+  margin-left: 10px;
+}
+
+.sidebarRightDropdown:hover i {
+  color: #111111;
+}
+
+.sidebarContentDropdownList {
+  height: 0px;
+  transition: height 0.3s;
+  transform-origin: center top;
+}
+
+.sidebarContentDropdownList hr {
+  width: 85%;
+}
+
+.paddingDiv {
+  transition: margin-bottom 0.3s;
+}
+
+.sub-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  background-color: white;
+  transform: translateX(420px);
+}
+
+.sub-header {
+  margin-top: 5px;
+  padding: 15px 0px 15px 25px;
+  font-weight: bold;
+}
+
+.sub-header:hover {
+  background-color: #eaeded;
+  cursor: pointer;
+}
+
+.sub-header i {
+  color: #8e9090;
+}
+
+.hr{
+    border-bottom: 1px solid #d5dbdb;
+    padding: 0;
+    margin: 5px 0;
+}
+
+
+@keyframes moveSideBar {
+  0% {
+    transform: translateX(-420px);
+    z-index: 100;
   }
-  to {
-    transform: rotate(360deg);
+
+  100% {
+    transform: translateX(-0px);
+  }
+}
+
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes dropDown {
+  0% {
+    opacity: 0;
+    transform: scaleY(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+
+@keyframes moveSubContainer {
+  0% {
+    transform: translateX(420px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+
+@keyframes moveMainContainer {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-420px);
   }
 }

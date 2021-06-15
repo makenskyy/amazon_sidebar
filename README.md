@@ -1,3 +1,16 @@
+
+
+# Я использовал Transition component из react-transition-group и 
+все if(state === 'entered') or if(state === 'entering) ---> все они оттуда пришли
+у них есть 4 стэйта --> 'entering', 'entered', 'exited', 'exiting'
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

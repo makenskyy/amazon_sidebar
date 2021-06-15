@@ -1,0 +1,140 @@
+[
+  {
+    "entries": [
+      {
+        "title": "Amazon Music",
+        "entries": [
+          {
+            "title": "Stram Music",
+            "entries": [
+              {
+                "title": "Amazon Music Unlimited"
+              },
+              {
+                "title": "Amazon Music HD"
+              },
+              {
+                "title": "Amazon Music Prime"
+              }
+            ]
+          },
+          {
+            "title": "Buy Music",
+            "entries": [
+              {"title": "CDs & Vinyl"},
+              {"title": "Download Store"}
+              
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Kindle E-readers & Books",
+        "entries": [
+          {
+            "title": "Kindle E-Readers",
+            "entries": [
+              {
+                "title": "Kindle Kids Edition"
+              },
+              {
+                "title": "Kindle"
+              },
+              {
+                "title": "Kindle Paperwhite"
+              },
+              {
+                "title": "Kindle Oasis"
+              },
+              {
+                "title": "Accessories"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "title": "Digital Content And Devices",
+    "type": {
+      "rows": true,
+      "dropDown": false
+    }
+  },
+  {
+    "entries": [
+      {
+        "title": "Electronics",
+        "entries": [
+          {
+            "title": "Electronics",
+            "entries": [
+              {
+                "title": "Accessories & Supplies"
+              },
+              {
+                "title": "Camera & Photo"
+              },
+              {
+                "title": "Car & Vehicle Electronics"
+              },
+              {
+                "title": "Cell Phones & Accessories"
+              },
+              {
+                "title": "Computers & Accessories"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Computers",
+        "entries": [
+          {
+            "title": "Computers",
+            "entries": [
+              {
+                "title": "Computer Accessories & Peripherals"
+              },
+              {
+                "title": "Computer Components"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "DROPDOWN"
+      },
+      {
+        "title": "Home, Garden, Pets & DIY"
+      },
+      {
+        "title": "Toys, Children & Baby"
+      },
+      {
+        "title": "Clothes, Shoes, Jewellery and Accessories"
+      },
+      {
+        "title": "Sports & Outdoors"
+      },
+      {
+        "title": "Food & Grovery"
+      },
+      {
+        "title": "Health & Beauty"
+      },
+      {
+        "title": "Car & Motorbike"
+      },
+      {
+        "title": "Business, Industry & Science"
+      }
+    ],
+    "title": "Shop By Department",
+    "type": {
+      "rows": true,
+      "dropDown": true
+    }
+  }
+]
