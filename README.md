@@ -1,6 +1,6 @@
 
 
-# Я использовал Transition component из react-transition-group и 
+Я использовал Transition component из react-transition-group и 
 все if(state === 'entered') or if(state === 'entering) ---> все они оттуда пришли
 у них есть 4 стэйта --> 'entering', 'entered', 'exited', 'exiting'
 
