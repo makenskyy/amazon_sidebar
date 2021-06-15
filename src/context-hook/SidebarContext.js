@@ -9,10 +9,8 @@ export const useSidebarContext = () => {
 
 export const SidebarContextProvider = (props) => {
 
-  //Responsible for opening and closing the sub container
   const [subContainer, setSubContainer] = useState(false);
 
-  //Responsible for storing the subContainers entries
   const [subContainerEntries, setSubContainerEntries] = useState(null);
 
 
